@@ -13,7 +13,10 @@ ENV/
 .vscode/
 .idea/
 
-# OS files
+
+# macOS
+# JetBrains IDE ( PyCharm)
+.idea/
 .DS_Store
 Thumbs.db
 
