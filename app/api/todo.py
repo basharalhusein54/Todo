@@ -28,3 +28,7 @@ async def update_todo(todo_obj:TodoAddUpdate, db:db_dependency, todo_id:Annotate
 @router.patch("/{todo_id}", status_code=status.HTTP_202_ACCEPTED)
 async def update_todo(todo_obj:TodoUpdatePartially, db:db_dependency, todo_id:Annotated[int,Path(gt=0)]):
     return crud_todo.update_todo(todo_obj, db, todo_id)
+
+@router.delete("/{todo_id}", status_code=status.HTTP_204_NO_CONTENT)
+async def update_todo(db:db_dependency, todo_id:Annotated[int,Path(gt=0)]):
+    return crud_todo.delete_todo(todo_id, db)

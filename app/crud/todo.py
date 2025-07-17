@@ -33,3 +33,10 @@ def update_todo(todo_obj, db, todo_id):
     db.refresh(existing_todo)
     return  {"message": "todo updated successfully"}
 
+def delete_todo(todo_id, db):
+    existing_todo = db.query(Todos).filter(Todos.id == todo_id).first()
+    if existing_todo is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
+                            detail=f"Todo with ID {todo_id} not found")
+    db.delete(existing_todo)
+    db.commit()

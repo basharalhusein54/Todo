@@ -4,7 +4,7 @@ GET http://127.0.0.1:8000/todos
 Accept: application/json
 
 ###
-GET http://127.0.0.1:8000/todos/9
+GET http://127.0.0.1:8000/todos/3
 Accept: application/json
 
 ###
@@ -39,3 +39,7 @@ Content-Type: application/json
 {
   "completed": true
 }
+
+###
+DELETE http://127.0.0.1:8000/todos/8
+Accept: application/json
