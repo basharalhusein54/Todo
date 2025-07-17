@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Env files (sensitive data)
+.env
+
+# SQLite DB file (if optional)
+*.db
+
+# Log files
+*.log
+
+# Migrations (if using Alembic, optional)
+migrations/
+
+# Coverage reports
+htmlcov/
+.coverage
+.cache/
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy & Pylint
+.mypy_cache/
+.pylint.d/
