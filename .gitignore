@@ -11,8 +11,7 @@ env/
 # PyCharm / JetBrains
 .idea/
 
-# PyCharm HTTP Clients scratch (احذف إذا تريد تتبعه)
-HTTP/
+
 
 # macOS Finder cruft
 .DS_Store
