@@ -1,42 +1,39 @@
-# Byte-compiled / optimized / DLL files
+# Python cache
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environment
+# Virtual environments
 .venv/
 venv/
 env/
 
-# VS Code
-.vscode/
-
-# PyCharm
+# PyCharm / JetBrains
 .idea/
 
-# macOS
+# PyCharm HTTP Clients scratch (احذف إذا تريد تتبعه)
+HTTP/
+
+# macOS Finder cruft
 .DS_Store
 
-# Env files (sensitive data)
+# Env files
 .env
+*.env
 
-# SQLite DB file (if optional)
+# SQLite (اختياري: تجاهله إذا ليس بيانات إنتاجية)
 *.db
+*.sqlite3
 
-# Log files
+# Logs
 *.log
 
-# Migrations (if using Alembic, optional)
-migrations/
-
-# Coverage reports
-htmlcov/
-.coverage
-.cache/
-
-# Pytest cache
+# Tests & tools
 .pytest_cache/
-
-# MyPy & Pylint
 .mypy_cache/
 .pylint.d/
+.cache/
+htmlcov/
+
+# Alembic migrations (اختياري)
+migrations/
